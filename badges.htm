@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/assignment.css" />
+<meta charset="UTF-8">
+
+<style>
+
+body {
+	background-image:url(images/badgers2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+</style>
+
+
+<title>Badges</title>
+
+</head>
+
+<body>
+<div class="wrapper">
+
+<div class="header">
+
+<h1>Code Academy Achievements</h1>
+
+</div>
+
+<div class="nav">
+<div class="hype_a_right">
+<a href="index.htm"><h2>Main</h2></a>
+</div>
+</div>
+<div id="status">test</div>
+<div class="badges">
+<img src="Badges/Build_Webpage.jpg" alt="Build Your Own Webpage" style="width:150px;height:200px; margin-left: 70px;">
+<img src="Badges/CSS_Overview.jpg" alt="CSS: An Overview" style="width:150px;height:200px; margin-left: 70px;">
+<img src="Badges/CSS_Positioning.jpg" alt="CSS Positioning" style="width:150px;height:200px; margin-left: 70px;">
+<img src="Badges/CSS_Selectors.jpg" alt="CSS Selectors" style="width:150px;height:200px;; margin-left: 70px;">
+</div>
+
+<div class="badges">
+<img src="Badges/Design_Button.jpg" alt="Design a Buttin for Your Website" style="width:150px;height:200px; margin-left: 70px;">
+<img src="Badges/Getting_Pro.jpg" alt="Getting Started with Programming" style="width:150px;height:200px; margin-left: 70px;">
+<img src="Badges/HTML_Basics.jpg" alt="HTML Basics" style="width:150px;height:200px; margin-left: 70px;">
+<img src="Badges/Introduction_CSS.jpg" alt="Introduction to CSS" style="width:150px;height:200px; margin-left: 70px;">
+</div>
+
+<div class="badges">
+<img src="Badges/Intro_Functions.jpg" alt="Introduction to Functions in JS" style="width:150px;height:200px; margin-left: 70px;">
+<img src="Badges/For_Loops_JS.jpg" alt="Introduction to 'For' Loops in JS" style="width:150px;height:200px; margin-left: 70px;">
+<img src="Badges/While_JS.jpg" alt="Introduction to 'While' Loops in JS" style="width:150px;height:200px; margin-left: 70px;">
+<img src="Badges/Flow_JS.jpg" alt="More on Control Flow in JS" style="width:150px;height:200px; margin-left: 70px;">
+</div>
+
+<div class="badges">
+<img src="Badges/Intro_to_jQuery.jpg" alt="Introduction to jQuery" style="width:150px;height:200px; margin-left: 70px;">
+<img src="Badges/jQuery_Functions.jpg" alt="jQuery Functions" style="width:150px;height:200px; margin-left: 70px;">
+<img src="Badges/Dynamic_HTML.jpg" alt="Introduction to jQuery" style="width:150px;height:200px; margin-left: 70px;">
+<img src="Badges/jQuery_Events.jpg" alt="jQuery Functions" style="width:150px;height:200px; margin-left: 70px;">
+</div>
+
+
+</body>
+<footer>
+<div class="footer">
+<div class="hype_b_right">
+<a href="https://www.facebook.com/profile.php?id=100011163212756">
+<img class="border" src="images/face.ico" alt="Facebook Icon" style="width:75px;height:75px;"></a>
+<a href="https://twitter.com/hashtag/w3schools">
+<img class="border" src="images/twitter.ico" alt="Twitter Icon" style="width:75px;height:75px;"></a>
+<a href="https://www.youtube.com/results?search_query=w3schools">
+<img class="border" src="images/youtube.png" alt="u-tube thumb" style="width:75px;height:75px;"></a>
+</div>
+(c) James Payne 2016
+</div>
+</footer>
+
+</div>
+
+
+</html>
+
+<script>
+		//display total number of badges
+		//socail links accounted for
+		window.onload = function() {
+			document.getElementById("status").innerHTML = "<h2>Completed " + (document.images.length - 3) + " badges. </h2>";
+			}
+</script>

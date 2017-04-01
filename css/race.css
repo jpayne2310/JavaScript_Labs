@@ -1,0 +1,10 @@
+.wrapper{
+        height: 400px;}
+#start{
+        font-size: 16px;
+        background-color: green;}
+#reload{
+        font-size: 16px;
+        background-color: red;}
+#options{
+        position: relative;}

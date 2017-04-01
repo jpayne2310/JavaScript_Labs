@@ -1,0 +1,228 @@
+/*     General Formats     */
+.wrapper {
+	width: 1200px;
+	height: 900px;
+	margin: 0 auto;
+	padding: 0;
+}
+.header {
+	color: black;
+	text-align: center;
+	padding: 5px;
+	position: relative;
+}
+.footer {
+	color:#10156F;
+	position: relative;
+	font-family: Times;
+	font-size: 24px;
+	text-align: center;
+	height: 75px;
+	clear: both;
+}
+.aside{
+	float: right;
+	font-family: Times;
+	font-size: 24px;
+	margin-right: 100px;
+	background-color: #f4d898;
+}
+.aside2{
+	float:right;
+	font-family: Times;
+	font-size: 24px;
+	background-color: #f4d898;
+	clear: both;
+	margin-top: 20px;
+}
+h1 {
+	text-align: center;
+}
+/* Paragraph Format */
+p {
+	font-size: 20px;
+	font-family: Times;
+	color: #DB570D;
+}
+/* Hypertext Link Formats */
+a:link {
+	color: #2e49bf;
+	text-decoration: none;
+	background-color: none;
+	margin-right: 10px;
+}
+a:visited {
+	color: #2e49bf;
+	text-decoration: none;
+	background-color: #0B0E5C;
+}
+a:hover {
+	color: #1EFE30;
+	text-decoration: underline;
+	background-color: #0B0E5C;
+}
+a:active {
+	color: #2e49bf;
+	text-decoration: underline;
+	background-color: #0B0E5C;
+}
+/* link positioning */
+.hype_a_right {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+}
+.hype_b_right {
+	position: absolute;
+	bottom: 20px;
+	right: 50px;
+}
+.hype_c_right {
+	float: right;
+	clear: both;
+	margin-top: 20px;
+	margin-right: 200px;
+	background-color: #f4d898;
+	width: 200px;
+	text-align: center;
+}
+/* format and layout for assignment table */
+.events{
+	margin-top: 30px;
+	width: 50%;
+	}
+.events p {
+	color: #204001;
+	font-family: Times;
+	font-size: 24px;
+	}
+	table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	background-color: #f4d898;
+}
+td {
+    padding: 5px;
+	font-family: Times;
+	font-size: 24px;
+	font-weight: bold;
+	color: #2e49bf;
+}
+th {
+    padding: 5px;
+	font-family: Times;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	color: black;}
+/* badge positioning */
+.badges{
+	position: relative;
+	margin-bottom: 20px;
+	/* format and layout for assignment 2 Math Problems */
+}
+.mProblems{
+	font-family: Times;
+	font-size: 24px;
+}
+.red{
+	background-color: red;
+}
+.mathWrapper {
+	width: 840px;
+	height: 1200px;
+	margin: 0 auto;
+	padding: 0;
+}
+.submit{
+	background-color: green;
+	font-size: 18px;
+	height: 32px;
+	width: 200px;
+}
+.preformance{
+	float: right;
+	clear: both;
+	width:400px;
+	height:400px;
+}
+/* format and layout for assignment 3 Availability */
+.myDiv{
+	width: 50px;
+	height: 50px;
+	border: 1px solid red;
+	float: left;
+}
+.myDiv2{
+	width: 50px;
+	height: 50px;
+	border: 1px solid red;
+	float: left;
+}
+.row{
+	clear: left;
+}
+.main{
+	margin-left:50px;
+	margin-top:50px;
+}
+.allAvailible{
+	background-color: green;
+	text-align: center;
+	margin: 20px 20px 0px 20px;
+	width: auto;
+	height: 40px;
+	float: left;
+	clear: both;
+}
+.unAvailible{
+	background-color: red;
+	text-align: center;
+	margin: 20px 20px 0px 20px;
+	width: auto;
+	height: 40px;
+	float: left;
+}
+.availibityWrapper {
+	width: 430px;
+	height: 800px;
+	margin: 0 auto;
+	padding: 0;
+}
+/* format and layout for assignment 4 Actor Edit */
+.wrapperActor {
+	border: solid 1px blue;
+	width: 1200px;
+	height: 800px;
+	margin: 0 auto;
+	padding: 0;
+}
+.actorCol1 {
+	width:100px;
+	float: left;
+	font-weight: bold;
+}
+.actorCol2 {
+	float: left;
+}
+.actorRow {
+	margin-left: 400px;
+	clear: left;
+	margin-top: 10px;
+}
+#actorsTable
+{
+	width: 250px;
+}
+.actorButtons {
+width: 150px;
+height: 30px;
+ border-radius: 10px;
+}
+#div1 {
+
+}
+#actorsTable {
+	float: left;
+	clear: both;
+}

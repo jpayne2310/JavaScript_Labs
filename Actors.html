@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+     <meta charset="UTF-8">
+    <title>Actors</title>
+	<link rel="stylesheet" type="text/css" href="css/assignment.css" />
+	    <script type="text/javascript" src="js/jquery2.2.3.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		
+			<style>
+		body{
+		background-color:#BABBDB;
+		}
+	</style>
+</head>
+
+<body>
+	 <div class="wrapperActor">
+		  <h1>Edit Actors</h1>
+		  		  <div id="div1" class="div">
+			   <table>
+				
+			   <br>	   
+					<div class="actorRow">
+						 <div class="actorCol1">First Name:</div>
+						 <div class="actorCol2"><input type="text" id="fName" /></div>
+					</div>
+					
+			   <br>
+					<div class="actorRow">
+						 <div class="actorCol1">Last Name:</div>
+						 <div class="actorCol2"><input type="text" id="lName" /></div>
+					</div>
+					
+			   <br>
+					<div class="actorRow">
+						 <div class="actorCol1">Date of Birth:</div>
+						 <div class="actorCol2"><input type="text" id="DOB" /></div>
+					</div>
+			   <br>
+					
+			   <div class="actorRow">
+					<div class="actorCol1">Gender:</div>
+					<div class="col2"><input type="radio" id="genM" name="gender" value="male" />
+					Male&nbsp;<input type="radio" id="genF" name="gender" value="female" />Female</div>
+			   </div>
+			   <br>
+			   
+					<div class="actorRow">
+						 <div class="actorCol1">Catagories:</div>
+						 <div class="col2"><input type="checkbox" name="category" id="action"    />
+						 Action&nbsp;<input type="checkbox" name="category" id="comedy"    />
+						 Comedy&nbsp;<input type="checkbox" name="category" id="drama"  />
+						 Drama&nbsp;<input type="checkbox" name="category" id="scienceFiction"  />
+						 Science Fiction&nbsp;
+							</div>
+					<br> <br>
+					</div>
+		  
+		  
+			   <div class="actorRow">
+			   <input type="button" class="actorButtons" id="addActor" value="Add Actor"</>
+			   <input type="button" class="actorButtons" id="updateActor" value="Update Actor"</>
+			   <input type="button" class="actorButtons" id="deleteActor" value="Delete Actor" style="background-color: red;"</>
+			   </div>
+
+			   </div>
+			   </table>
+		  <table id="actorsTable" class="table table-striped">
+
+
+    </table>	
+	 </div>
+</body>
+</html>
+<script type="text/javascript" src="js/Actors.js"></script>

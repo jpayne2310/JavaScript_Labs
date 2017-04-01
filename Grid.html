@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .red {background-color: red}
+        .blue {background-color: blue}
+    </style>
+</head>
+<body>
+<h1>Grid Generation</h1>
+<input type="text" id="num" style="width:20px;">
+<input type="button" id="generateGrid" value="Generate Grid" />
+<p></p>
+<div id="div1">
+
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+    var randomNumber = function (min, max)
+    {
+        return Math.floor (Math.random() * (max - min + 1)) + min;
+    }
+
+    document.getElementById("generateGrid").onclick = function()
+    {
+        //get user input
+         var numberOfRows = parseInt(document.getElementById("num").value);
+
+        //set array control variable
+         var a = [];
+
+        //format for grid output
+         var str = "<table cellpadding='5' cellspacing='5' border='1'>";
+
+        //initialize reusable variable
+         var totalGrid = 0;
+
+        //load array
+         for (row=0; row<numberOfRows; row++)
+         {
+             a [row] = [];
+
+                 for (col=0; col<numberOfRows; col++)
+                 {
+                     a[row][col] = randomNumber (1, 100);
+
+                     //total of all values in grid squares
+                     totalGrid += a[row][col];
+                 }
+         }
+        //enable console verification
+         console.log(a);
+
+        //Generate grid
+     for (row=0; row<numberOfRows; row++)
+     {
+         str += "<tr>";
+         document.getElementById("div1").innerHTML = str;
+                        for (col=0; col<numberOfRows; col++)
+                        {
+                            //if square value is a multiple of 3, background color red
+                            if (a[row][col] % 3 == 0) {
+                                str += "<td class='red'>" + a[row][col] + "</td>";
+                                document.getElementById("div1").innerHTML = str;
+                            }
+                            //if square value is a multiple of 2, background color blue
+                            else if (a[row][col] % 2 == 0) {
+                                str += "<td class='blue'>" + a[row][col] + "</td>";
+                                document.getElementById("div1").innerHTML = str;
+                            }
+                            else {
+                                str += "<td>" + a[row][col] + "</td>";
+                                document.getElementById("div1").innerHTML = str;
+                            }
+                        }
+         //calculate average of all grid values
+         gridAdverage=totalGrid/(numberOfRows*numberOfRows);
+
+         //output grid average value
+         document.getElementById("div1").innerHTML += "<br/>" + "The Average is: " +
+                 gridAdverage.toFixed(2);
+     }
+
+    }
+</script>
